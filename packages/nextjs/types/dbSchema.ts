@@ -1,6 +1,7 @@
 // Tipo para representar un evento cultural
 export type CulturalEvent = {
     title: string;
+    location:string;
     description: string;
     venue: string;
     date: string;
@@ -9,6 +10,13 @@ export type CulturalEvent = {
     updates: EventUpdate[];
 };
 
+export type AIEvaluation = {
+    relevanciaCultural: number;
+    novedad: number;
+    diversion: number;
+    costo: number;
+    evaluationRemarks: string;
+  }
 // Tipo para representar un perfil individual
 export type IndividualProfile = {
     name: string;
